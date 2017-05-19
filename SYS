@@ -25,7 +25,8 @@
  case $rep in
     a)  w | cut -d '' -f 1 - | grep -v USER | sort -u ;;
 
-    b)  sudo apt-get install ia32-lib
+    b)  wget http://apachefriends.org/download.html/xampp-linux-x64-5.6.3-0-installer.run
+        sudo apt-get install ia32-lib
         sudo tar xvfz ./xampp-linux- *.tar.gz
         sudo chmod +x xampp-linux-x64-5.6.3-0-installer.run
         sudo ./xamp-linux-x64-5.6.3-0-installer.run
